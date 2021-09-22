@@ -1,5 +1,4 @@
 version: "3.7"
-<<<<<<< HEAD
 
 services:
 #Nginx Service
@@ -37,7 +36,6 @@ services:
       - "3000:3000"
     volumes:
       - /laravel/app
-=======
 web:
   image: nginx:alpine
   volumes:
