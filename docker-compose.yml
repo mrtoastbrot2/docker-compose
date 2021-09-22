@@ -35,4 +35,18 @@ services:
     ports:
       - "3000:3000"
     volumes:
+<<<<<<< HEAD
       - /laravel/app
+=======
+      - /laravel/app
+web:
+  image: nginx:alpine
+  volumes:
+   - ./templates:/etc/nginx/templates
+  ports:
+   - "8080:80"
+  environment:
+   - NGINX_HOST=foobar.com
+   - NGINX_PORT=80
+>>>>>>> 706567386265d56f2b6276f054db9162a9b6cce9
+>>>>>>> e7076164937b08fa5e08e5a0690885ae8c0a002c
